@@ -1,0 +1,15 @@
+<div style="padding: 12px;">
+    <h1>Here are the results: </h1>
+    <p>Total Combinations: {{response.value}}</p>
+    <div *ngIf="previousPage"><button (click) ="previousPagee()" > Previous</button></div>
+    <div *ngIf="nextPage"><button (click) ="nextPagee()" > Next</button></div>
+    <div *ngFor="let combination of response.combinations" style="margin-top:10px;">
+        <div>
+            {{combination}}
+        </div>
+    </div>
+    <!--   
+    <button (click) ="previousPage()" > Previous</button>
+    <button (click) ="nextPage()" > Next</button>
+    -->
+</div>
